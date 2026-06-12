@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="preload" href="assets/hero_bg.png" as="image" fetchpriority="high">
+  
+  <!-- Primary SEO Metadata -->
+  <title>Sri Balaji Ghee Sweets | Traditional Ghee & Dry Fruit Sweets</title>
+  <meta name="description" content="Experience the rich heritage of Sri Balaji Ghee Sweets. Indulge in premium handcrafted traditional ghee sweets, delicious milk sweets, and luxury dry fruit assortments. Order online for delivery and catering.">
+  <meta name="keywords" content="sri balaji ghee sweets, traditional sweets, ghee sweets, indian mithai, kaju katli, motichoor ladoo, gulab jamun, festival sweet boxes, catering sweets">
+  <meta name="author" content="Sri Balaji Ghee Sweets">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sribalajigheesweets.com/">
+  <meta property="og:title" content="Sri Balaji Ghee Sweets | Handcrafted Premium Traditional Sweets">
+  <meta property="og:description" content="Experience pure authentic flavors with Sri Balaji Ghee Sweets. Handcrafted with rich pure ghee, premium dry fruits, and years of heritage. Order online today.">
+  <meta property="og:image" content="assets/hero_bg.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sribalajigheesweets.com/">
+  <meta property="twitter:title" content="Sri Balaji Ghee Sweets | Handcrafted Premium Traditional Sweets">
+  <meta property="twitter:description" content="Experience pure authentic flavors with Sri Balaji Ghee Sweets. Handcrafted with rich pure ghee, premium dry fruits, and years of heritage.">
+  <meta property="twitter:image" content="assets/hero_bg.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Sri Balaji Ghee Sweets",
+    "image": "assets/hero_bg.png",
+    "url": "https://sribalajigheesweets.com/",
+    "telephone": "+916300924408",
+    "priceRange": "$$",
+    "servesCuisine": "Indian Sweets and Desserts",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ring Road, Near Siddhartha Medical College",
+      "addressLocality": "Vijayawada",
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "520008",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-title">Sri Balaji</span>
+        <span class="loader-subtitle">Ghee Sweets</span>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar"></div>
+      </div>
+      <p class="loader-text">Preparing sweetness...</p>
+    </div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-title">Sri Balaji</span>
+        <span class="logo-subtitle">Ghee Sweets</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#story" class="nav-item">Our Story</a>
+        <a href="#menu" class="nav-item">Sweets Menu</a>
+        <a href="#catering" class="nav-item">Catering</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Nav Interactions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="cart-btn" id="open-cart-btn" aria-label="View Shopping Cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo">
+        <span class="logo-title">Sri Balaji</span>
+        <span class="logo-subtitle">Ghee Sweets</span>
+      </div>
+      <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+      <a href="#home" class="mobile-nav-item">Home</a>
+      <a href="#story" class="mobile-nav-item">Our Story</a>
+      <a href="#menu" class="mobile-nav-item">Sweets Menu</a>
+      <a href="#catering" class="mobile-nav-item">Catering</a>
+      <a href="#contact" class="mobile-nav-item">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="mouse-spotlight" id="hero-spotlight"></div>
+      <div class="hero-content">
+        <div class="tagline-badge">Heritage of Taste Since 1978</div>
+        <h1 class="hero-title">Experience the Purity of <br><span class="accent-text">Authentic Royal Mithai</span></h1>
+        <p class="hero-desc">Indulge in premium traditional sweets, handcrafted with pure Desi Ghee, premium saffron, and select dry fruits. Made fresh daily with love and royalty.</p>
+
+      </div>
+      
+      <!-- Key Features Strip -->
+      <div class="features-strip">
+        <div class="feature-item">
+          <div class="feature-icon">✨</div>
+          <div class="feature-text">
+            <h3>100% Pure Ghee</h3>
+            <p>Traditional wood-churned purity</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌱</div>
+          <div class="feature-text">
+            <h3>All Natural</h3>
+            <p>No artificial preservatives</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📦</div>
+          <div class="feature-text">
+            <h3>Luxury Packaging</h3>
+            <p>Elegant boxes for gifting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="story-section page-section">
+      <div class="container grid-2">
+        <div class="story-image-wrapper">
+          <img src="assets/hero_bg.png" alt="Sri Balaji sweets craftsmanship" class="story-image" loading="lazy">
+          <div class="story-floating-card">
+            <span class="years">45+</span>
+            <span class="label">Years of Sweetening Celebrations</span>
+          </div>
+        </div>
+        <div class="story-content">
+          <h2 class="section-title">Our Heritage & Craft</h2>
+          <div class="divider"></div>
+          <p class="story-p lead">From a small sweet stall in 1978 to a hallmark of celebration, Sri Balaji Ghee Sweets has stayed true to its ancestral recipes and unmatched quality.</p>
+          <p class="story-p">Every batch of our Kaju Katli, Dry Fruit Laddu, Mysore Pak, Ghee Laddu, and Badam Halwa is prepared under strict quality control. We source milk from organic dairy farms, cardamom from the hills of Kerala, and Kashmiri saffron to create a taste that lingers forever.</p>
+          <div class="story-stats">
+            <div class="stat-box">
+              <h3>50+</h3>
+              <p>Sweet Varieties</p>
+            </div>
+            <div class="stat-box">
+              <h3>100k+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat-box">
+              <h3>0</h3>
+              <p>Preservatives Used</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sweets Menu Section -->
+    <section id="menu" class="menu-section page-section">
+      <div class="container">
+        <div class="menu-header">
+          <h2 class="section-title text-center">Handcrafted Royal Menu</h2>
+          <div class="divider center"></div>
+          <p class="section-desc text-center">Filter through our fresh creations. Add to cart to estimate your sweet package and initiate a fast order.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters" id="category-filters">
+          <button class="filter-btn active" data-filter="all">All Sweets</button>
+          <button class="filter-btn" data-filter="ghee">Pure Ghee Specials</button>
+          <button class="filter-btn" data-filter="dryfruit">Dry Fruit Treats</button>
+          <button class="filter-btn" data-filter="gifts">Premium Gift Boxes</button>
+        </div>
+
+        <!-- Sweets Card Grid -->
+        <div class="sweets-grid" id="sweets-grid">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="catering-section page-section">
+      <!-- 1. Elegant Hero Banner -->
+      <div class="catering-hero">
+        <div class="catering-hero-overlay"></div>
+        <div class="catering-hero-content">
+          <span class="catering-badge">Royal Sweet Catering</span>
+          <h2 class="catering-hero-title">Elevate Your Celebrations <br>with Handcrafted Royalty</h2>
+          <p class="catering-hero-desc">From grand weddings to corporate galas, we bring the authentic taste of tradition to your guests. Prepared fresh, served with love.</p>
+        </div>
+      </div>
+
+      <!-- 2. Introduction Section -->
+      <div class="container catering-intro">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <span class="sub-title">Catering Excellence</span>
+            <h3>Heritage Recipes, Modern Presentation</h3>
+            <p>At Sri Balaji Ghee Sweets, we believe every occasion deserves a sweet touch of royalty. Our catering service offers custom-curated dessert tables, live sweet counters, and personalized corporate gift hampers. Each sweet is handcrafted using age-old family recipes, organic dairy, Kashmiri saffron, and 100% pure wood-churned Desi Ghee.</p>
+            <p>Our professional service team ensures seamless setup and delivery, so you can enjoy your celebrations while we sweeten your moments.</p>
+          </div>
+          <div class="intro-stats">
+            <div class="stats-card-grid">
+              <div class="stat-card">
+                <span class="stat-number">5000+</span>
+                <span class="stat-label">Happy Customers</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Events Catered</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Feature Cards & 4. Icon Cards -->
+      <div class="container services-showcase">
+        <div class="section-header text-center">
+          <h2>Our Catering Services</h2>
+          <div class="divider center"></div>
+          <p>We tailor our royal sweet menus to perfectly match the scale and theme of your event.</p>
+        </div>
+
+        <div class="services-cards-grid">
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_wedding.png" alt="Grand Indian Wedding stage dessert setup" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Royal Grand Setup</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Wedding Catering</h4>
+              <p>Curated traditional sweet menus, customized color palettes, and royal packaging to match your wedding theme.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_reception.png" alt="Live sweet jalebi station reception setup" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Live Dessert Stations</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Reception Catering</h4>
+              <p>Live dessert stations featuring piping hot Gulab Jamuns, Jalebis, and chilled Badam Halwa served with fresh rabri.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_corporate.png" alt="Premium corporate sweet box hampers setup" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Corporate Sweet Hampers</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Corporate Events</h4>
+              <p>Impress clients and celebrate team achievements with bespoke sweet boxes, logo hampers, and catering setups.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_festivals.png" alt="Diwali sweet decorative platters setup" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Diwali Festive Platters</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Festivals & Celebrations</h4>
+              <p>Celebrate Diwali, Holi, Rakhi, and seasonal festivals with our traditional ghee sweets and premium assorted gift platters.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_family.png" alt="Traditional family gathering enjoying sweets" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Traditional Family Feasts</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Family Functions</h4>
+              <p>Gatherings, housewarmings, or anniversaries—we serve comforting, authentic traditional sweets that taste just like home.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="assets/catering_bulk.png" alt="Premium sweet boxes packed bulk dispatch" loading="lazy" width="400" height="300">
+              <div class="image-overlay">
+                <span class="image-caption">Premium Dispatch Boxing</span>
+              </div>
+            </div>
+            <div class="service-info">
+              <h4>Bulk Sweet Orders</h4>
+              <p>Large volume orders for distributing sweets to friends, associates, or community gatherings with customized weight options.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- 5. Premium Image Gallery -->
+      <div class="container catering-gallery-section">
+        <div class="section-header text-center">
+          <h2>Catering Setup Gallery</h2>
+          <div class="divider center"></div>
+          <p>Peek into our royal event setups, plating aesthetics, and custom sweet boxes.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/hero_bg.png" alt="Grand Sweet Platter Setup" loading="lazy" width="600" height="450">
+            <figcaption>Royal Platter Presentation</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/gift_box.png" alt="Royal Mithai Gift Assortments" loading="lazy" width="600" height="450">
+            <figcaption>Custom Gift Packaging</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/mysore_pak.png" alt="Traditional Mysore Pak Arrangement" loading="lazy" width="600" height="450">
+            <figcaption>Soft Ghee Mysore Pak Display</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/ghee_laddu.png" alt="Yellow Ghee Besan Laddus Plating" loading="lazy" width="600" height="450">
+            <figcaption>Shahi Besan Ladoos Plating</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 6. Why Choose Us -->
+      <div class="why-choose-us-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Why Choose Sri Balaji Ghee Sweets?</h2>
+            <div class="divider center"></div>
+            <p>Our dedication to quality and presentation ensures an unforgettable culinary experience.</p>
+          </div>
+          <div class="why-grid">
+            <article class="why-card">
+              <div class="why-icon">✨</div>
+              <h4>Pure Ghee</h4>
+              <p>Prepared exclusively with premium, aromatic wood-churned Desi Ghee for pure traditional flavor.</p>
+            </article>
+            <article class="why-card">
+              <div class="why-icon">🌿</div>
+              <h4>Fresh Daily Preparation</h4>
+              <p>No storage. Every sweet is cooked fresh on the morning of your event to guarantee taste and health.</p>
+            </article>
+            <article class="why-card">
+              <div class="why-icon">💎</div>
+              <h4>Premium Ingredients</h4>
+              <p>Grade-A cashews, California almonds, and original Kashmiri saffron threads. No artificial additives.</p>
+            </article>
+            <article class="why-card">
+              <div class="why-icon">🎁</div>
+              <h4>Custom Packaging</h4>
+              <p>Bespoke royal boxes tailored to your event's theme, color code, or wedding invite card.</p>
+            </article>
+            <article class="why-card">
+              <div class="why-icon">🚀</div>
+              <h4>On-Time Delivery</h4>
+              <p>Strict logistical tracking to ensure all setups and sweet deliveries arrive ahead of the schedule.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Testimonials Carousel -->
+      <div class="container catering-testimonials-section">
+        <div class="section-header text-center">
+          <h2>Event Testimonials</h2>
+          <div class="divider center"></div>
+          <p>Read experiences from hosts who trusted us with their event dessert menus.</p>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-slides" id="catering-carousel-slides">
+            <div class="carousel-slide active">
+              <blockquote class="catering-quote">
+                <p>"Sri Balaji Ghee Sweets catered the dessert counter at our wedding. The live Mysore Pak counter was the absolute highlight! Every guest praised the texture and taste. Outstanding service!"</p>
+                <cite>— Suresh & Meera Nair, Bengaluru</cite>
+              </blockquote>
+            </div>
+            <div class="carousel-slide">
+              <blockquote class="catering-quote">
+                <p>"For our annual corporate meet, we ordered 300 bulk custom-assorted boxes. The packaging was extremely royal with gold embossing, and the Dry Fruit Laddus were perfect. 5/5 stars!"</p>
+                <cite>— HR Director, TechSolutions Ltd</cite>
+              </blockquote>
+            </div>
+            <div class="carousel-slide">
+              <blockquote class="catering-quote">
+                <p>"Excellent quality of sweets for our Diwali family function. Saffron Badam Halwa arrived warm and was absolute heaven. On-time delivery and top notch packaging."</p>
+                <cite>— Devendra Hegde, Mysuru</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="carousel-dots" id="catering-carousel-dots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Elegant CTA Section -->
+      <div class="catering-cta-section">
+        <div class="catering-cta-overlay"></div>
+        <div class="catering-cta-content container">
+          <h3>Call us for Catering Orders</h3>
+          <div class="divider center"></div>
+          <p>Plan your custom sweet menu with our catering expert. Get advice on portion weights and packaging options.</p>
+          <div class="cta-actions">
+            <a href="tel:+916300924408" class="btn btn-primary cta-phone-btn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +91 63009 24408
+            </a>
+            <a href="https://wa.me/916300924408?text=Hi%20Sri%20Balaji%20Ghee%20Sweets%2C%20I%20would%20like%20to%20inquire%20about%20your%20catering%20services." target="_blank" class="btn btn-outline cta-whatsapp-btn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.734-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.486.002 9.948-4.41 9.95-9.847.002-2.634-1.02-5.11-2.877-6.969-1.857-1.859-4.324-2.883-6.958-2.885-5.49 0-9.952 4.413-9.954 9.851-.001 1.732.483 3.42 1.4 4.939l-.993 3.626 3.707-.965zm10.742-7.518c-.295-.148-1.748-.859-2.016-.957-.268-.099-.463-.148-.658.148-.195.297-.756.957-.927 1.15-.17.195-.341.22-.636.072-.295-.148-1.246-.457-2.373-1.46-1.127-1.003-1.888-2.243-2.11-2.614-.22-.371-.023-.57.162-.756.166-.168.371-.432.557-.648.186-.216.248-.371.371-.618.124-.247.062-.464-.031-.611-.093-.148-.756-1.821-1.036-2.493-.273-.658-.55-.568-.756-.578-.195-.01-.42-.01-.645-.01a1.24 1.24 0 0 0-.897.42c-.31.341-1.183 1.16-1.183 2.825 0 1.666 1.207 3.273 1.373 3.494.166.22 2.374 3.623 5.753 5.08.804.347 1.433.555 1.923.712.809.257 1.545.221 2.128.134.649-.097 1.748-.711 1.992-1.396.244-.686.244-1.274.17-1.396-.073-.124-.268-.222-.563-.37z"/>
+              </svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section page-section">
+      <div class="container">
+        <h2 class="section-title text-center">Words of Sweetness</h2>
+        <div class="divider center"></div>
+        
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"The Kaju Katli was outstanding! So smooth, not overly sweet, and it just melted in the mouth. Highly recommend Sri Balaji Ghee Sweets for bulk festive gifting!"</p>
+            <div class="user-meta">
+              <h4>Amit Sharma</h4>
+              <span>Bengaluru</span>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"We ordered their Ghee Mysore Pak and Ghee Laddu live counter for our daughter's wedding. Excellent taste, hygienic preparation, and superb service."</p>
+            <div class="user-meta">
+              <h4>Anjali Pillai</h4>
+              <span>Mysuru</span>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Authentic traditional taste. Saffron flavor is genuine and they do not compromise on Ghee quality. Absolutely love their premium Assorted gift boxes."</p>
+            <div class="user-meta">
+              <h4>Vikram Rao</h4>
+              <span>Bengaluru</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="contact-section page-section">
+      <div class="container grid-2">
+        <div class="contact-details">
+          <h2 class="section-title">Our Sweet Boutiques & Contact</h2>
+          <div class="divider"></div>
+          <p class="contact-intro">Come experience our physical sweets counters, or reach out to us directly for orders and queries.</p>
+          
+          <div class="branches-grid">
+            <div class="branch-card">
+              <h4>📍 Vijayawada (Main Boutique)</h4>
+              <p>Ring Road, Near Siddhartha Medical College, Vijayawada, AP 520008</p>
+            </div>
+            <div class="branch-card">
+              <h4>📍 Guntur Boutique</h4>
+              <p>Lakshmipuram Main Road, Near NTR Stadium, Guntur, AP 522007</p>
+            </div>
+            <div class="branch-card">
+              <h4>📍 Hyderabad Boutique</h4>
+              <p>Jubilee Hills Road No. 36, Near Metro Station, Hyderabad, TS 500033</p>
+            </div>
+            <div class="branch-card">
+              <h4>📍 Nellore Boutique</h4>
+              <p>Trunk Road, Near VRC Centre, Nellore, AP 524001</p>
+            </div>
+          </div>
+
+          <div class="contact-methods-bar">
+            <div class="contact-method-item">
+              <span class="method-icon">📞</span>
+              <div>
+                <h5>Call / WhatsApp</h5>
+                <p><a href="tel:+916300924408">+91 63009 24408</a></p>
+              </div>
+            </div>
+            <div class="contact-method-item">
+              <span class="method-icon">✉</span>
+              <div>
+                <h5>Email Support</h5>
+                <p><a href="mailto:sribalajifoods3455@gmail.com">sribalajifoods3455@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <iframe 
+            src="https://maps.google.com/maps?q=16.518114,80.612717&z=17&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sri Balaji Ghee Sweets Location Map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Sri Balaji Ghee Sweets</h3>
+        <p>Crafting royal traditional Indian sweets since 1978 with 100% pure Desi Ghee and natural ingredients.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/sribalaji_gheesweets/?hl=en" target="_blank" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <div class="footer-links-list">
+          <a href="#home">Home</a>
+          <a href="#story">Our Story</a>
+          <a href="#menu">Sweets Menu</a>
+          <a href="#catering">Catering</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Our Main Boutique</h4>
+        <p>📍 Ring Road, Near Siddhartha Medical College, Vijayawada, AP 520008</p>
+        <p>📞 +91 63009 24408</p>
+        <p>✉ <a href="mailto:sribalajifoods3455@gmail.com">sribalajifoods3455@gmail.com</a></p>
+        <p style="margin-block-start: 1.25rem; font-size: 0.8rem; opacity: 0.8; line-height: 1.4; color: #C0B4A9;">
+          Boutiques: Vijayawada (Main) | Guntur | Hyderabad | Nellore
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Sri Balaji Ghee Sweets. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Side Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Sweet Package</h3>
+      <button class="close-cart-btn" id="close-cart-btn" aria-label="Close Cart">&times;</button>
+    </div>
+    
+    <!-- Cart Items container -->
+    <div class="cart-items" id="cart-items-container">
+      <!-- Empty cart message default -->
+      <div class="empty-cart-msg">
+        <span class="empty-icon">🛒</span>
+        <p>Your cart is empty.</p>
+        <a href="#menu" class="btn btn-outline close-cart-link">Explore Menu</a>
+      </div>
+    </div>
+    
+    <!-- Cart Footer Calculations -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="calc-row">
+        <span>Cart Items:</span>
+        <span id="cart-total-qty">0 items</span>
+      </div>
+      <div class="calc-row total">
+        <span>Estimated Total:</span>
+        <span id="cart-grand-total">₹0</span>
+      </div>
+      <p class="disclaimer">*Pricing calculated for 1 Kg boxes unless specified. Actual weight may vary slightly.</p>
+      <button class="btn btn-primary btn-block" id="whatsapp-order-btn">
+        Place Order via WhatsApp
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.734-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.486.002 9.948-4.41 9.95-9.847.002-2.634-1.02-5.11-2.877-6.969-1.857-1.859-4.324-2.883-6.958-2.885-5.49 0-9.952 4.413-9.954 9.851-.001 1.732.483 3.42 1.4 4.939l-.993 3.626 3.707-.965zm10.742-7.518c-.295-.148-1.748-.859-2.016-.957-.268-.099-.463-.148-.658.148-.195.297-.756.957-.927 1.15-.17.195-.341.22-.636.072-.295-.148-1.246-.457-2.373-1.46-1.127-1.003-1.888-2.243-2.11-2.614-.22-.371-.023-.57.162-.756.166-.168.371-.432.557-.648.186-.216.248-.371.371-.618.124-.247.062-.464-.031-.611-.093-.148-.756-1.821-1.036-2.493-.273-.658-.55-.568-.756-.578-.195-.01-.42-.01-.645-.01a1.24 1.24 0 0 0-.897.42c-.31.341-1.183 1.16-1.183 2.825 0 1.666 1.207 3.273 1.373 3.494.166.22 2.374 3.623 5.753 5.08.804.347 1.433.555 1.923.712.809.257 1.545.221 2.128.134.649-.097 1.748-.711 1.992-1.396.244-.686.244-1.274.17-1.396-.073-.124-.268-.222-.563-.37z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    Item added to cart!
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
